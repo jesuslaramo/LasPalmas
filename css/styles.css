@@ -4,6 +4,11 @@
     --beige: #e5e1d8;
     --pink: #fc3581;
     --red: #e50f2b;
+    --yellow: #ffbe21;
+    --gray: #7f8487;
+}
+body{
+    font-family: 'Raleway', sans-serif;
 }
 .julius-font{
     font-family: 'Julius Sans One', sans-serif;
@@ -13,10 +18,10 @@
 }
 header{
     background-color: var(--beige);
-    padding: 20px 0;
+    padding:  0;
 }
 header img{
-    max-height: 80px;
+    max-height: 120px;
 }
 header .search{
     color: #000;
@@ -64,24 +69,28 @@ header .search i{
     margin-bottom: 20px;
     border-radius: 16px;
     font-family: 'Raleway', sans-serif;
-    font-size: 1.25rem;
+    font-size: 1.5rem;
+    border-radius: 50px;
+    padding: 10px 40px;
 }
 .contact .form-control:focus{
     border-color: var(--pink);
     box-shadow: 0 0 0 0.25rem rgba(252,53,129,.25);
 }
 .contact button{
-    font-size: calc(1.375rem + 1vw);
-    border: 2px solid #fff;
-    border-bottom: 2px solid var(--red) !important;
-    border-radius: 0;
+    border: 6px solid var(--red) !important;
+    border-radius: 50px;
     font-family: 'Raleway', sans-serif;
-    padding-bottom: 0;
-    padding-top: 0;
     margin-top: 40px;
+    font-weight: 700;
+    text-transform: uppercase;
+    font-size: 1.5rem;
+    color: var(--red);
 }
 .contact button:hover{
-    border: 2px solid var(--red) !important;
+    border: 6px solid var(--red) !important;
+    background-color: var(--red);
+    color: #fff;
 }
 .contact .btn-success{
     background-color: var(--red);
@@ -122,8 +131,66 @@ footer .nav li a.disabled{
 .modal .btn-close{
     background: transparent url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23fff'%3e%3cpath d='M.293.293a1 1 0 0 1 1.414 0L8 6.586 14.293.293a1 1 0 1 1 1.414 1.414L9.414 8l6.293 6.293a1 1 0 0 1-1.414 1.414L8 9.414l-6.293 6.293a1 1 0 0 1-1.414-1.414L6.586 8 .293 1.707a1 1 0 0 1 0-1.414z'/%3e%3c/svg%3e") center/1em auto no-repeat;
 }
-
-
+.info{
+    background-color: var(--pink);
+    padding: 80px 0;
+}
+.info h1, .info h2{
+    color: var(--yellow);
+    margin-bottom: 60px;
+}
+.info .white-title{
+    color: var(--gray);
+    background-color: #fff;
+    border-radius: 50px;
+    padding: 10px 40px;
+    margin-bottom: 20px;
+}
+.info .white-title h4{
+    color: var(--gray);
+    margin-bottom: 0 !important;
+    font-weight: 400;
+}
+.info .appointment{
+    border: 6px solid var(--yellow);
+    border-radius: 50px;
+    margin-top: 80px;
+    margin-bottom: 40px;
+}
+.info .appointment h1{
+    color: var(--yellow);
+    margin-bottom: 0;
+    font-weight: 700;
+}
+.info .form-control {
+    background-color: #fff;
+    color: var(--gray);
+    border-radius: 50px;
+    padding: 10px 40px;
+    margin-bottom: 20px;
+    font-size: 1.5rem;
+}
+.info .form-control::placeholder{
+    font-size: 1.5rem;
+    color: var(--gray);
+}
+.info button{
+    border: 6px solid var(--yellow);
+    border-radius: 50px;
+    margin-top: 20px;
+    color: var(--yellow);
+    font-weight: 700;
+    text-transform: uppercase;
+    font-size: 1.5rem;
+}
+.info button:hover{
+    background-color: var(--yellow);
+    color: #fff;
+}
+.info .form-control:focus{
+    border-color: var(--pink);
+    box-shadow: 0 0 0 0.25rem rgba(255, 190, 33,0.25);
+}
 @media (max-width: 1199.98px) {
    
 }
